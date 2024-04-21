@@ -37,15 +37,12 @@ jobs:
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
         with:
-          host: $ {{ secrets.EC2_HOST }}
+          host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            docker login
-            if docker ps --all | grep heart-attack; then
-              docker stop heart-attack
-              docker rm heart-attack
-            fi
-            
-            docker pull ${{ secrets.DOCKER_USERNAME }}/deploy-heart-attack:v1
-            docker run -d --name deploy-heart-attack -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/deploy-heart-attack:v1
+            docker pull ${{ secrets.DOCKER_USERNAME }}/deploy-proyecto-final:v1
+            docker stop deploy-proyecto-final || true
+            docker rm deploy-proyecto-final || true
+            docker run -d --name deploy-heart-attack -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/deploy-proyecto-final:v1
+       
