@@ -31,20 +31,16 @@ jobs:
       - name: Docker Push to Dockerhub
         run: docker push gab1995/deploy-proyecto-final:v1
 
-      - name: Login into the server
-        run: echo '${{ secrets.DOCKER_PASSWORD }}' | docker login -u '${{ secrets.DOCKER_USERNAME }}' --password-stdin
-
-      - name: Deploy to EC2
+      - name: Login into the server and Deploy
         uses: appleboy/ssh-action@master
         with:
-          host: $ {{ secrets.EC2_HOST }}
+          host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            docker login -u '${{ secrets.DOCKER_USERNAME }}' -p '${{ secrets.DOCKER_PASSWORD }}'
-            if docker ps --all | grep heart-attack; then
-              docker stop heart-attack
-              docker rm heart-attack
+            if docker ps --all | grep deploy-heart-attack; then
+              docker stop deploy-heart-attack
+              docker rm deploy-heart-attack
             fi
             
             docker pull ${{ secrets.DOCKER_USERNAME }}/deploy-heart-attack:v1
