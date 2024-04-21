@@ -44,5 +44,5 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/deploy-proyecto-final:v1
             docker stop deploy-proyecto-final || true
             docker rm deploy-proyecto-final || true
-            docker run -d --name deploy-heart-attack -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/deploy-proyecto-final:v1
+            docker run -d --name deploy-proyecto-final -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/deploy-proyecto-final:v1
        
