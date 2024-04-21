@@ -68,5 +68,5 @@ with open("metrics.txt", 'w') as outfile:
 # --------------------------------------------
 # SERIALIZING
 # --------------------------------------------
-model_filename = 'model/logistic_regression_model.pkl'
+model_filename = 'model/logistic_regression_model_v01.pkl'
 joblib.dump(best_model, model_filename)

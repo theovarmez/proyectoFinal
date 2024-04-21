@@ -1,0 +1,2 @@
+['remote "versioning"']
+    url = s3://proyecto-final/versioning/
