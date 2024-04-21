@@ -1,4 +1,3 @@
-
 name: CI Deploy Model Predict Heart Attack
 
 # Trigger
@@ -42,11 +41,7 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_PRIVATE_KEY }}
           script: |
-            docker login -u '${{ secrets.DOCKER_USERNAME }}' -p '${{ secrets.DOCKER_PASSWORD }}'
-            if docker ps --all | grep heart-attack; then
-              docker stop heart-attack
-              docker rm heart-attack
-            fi
-            
             docker pull ${{ secrets.DOCKER_USERNAME }}/deploy-heart-attack:v1
+            docker stop deploy-heart-attack || true
+            docker rm deploy-heart-attack || true
             docker run -d --name deploy-heart-attack -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/deploy-heart-attack:v1
