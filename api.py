@@ -25,4 +25,4 @@ async def predict(data: HeartData):
         raise HTTPException(
             detail=str(e),
             status_code=status.HTTP_400_BAD_REQUEST
-        )
+        )

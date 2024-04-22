@@ -18,4 +18,4 @@ class HeartData(BaseModel):
 
     @validator("*", pre=True)
     def parse_float(cls, v):
-        return float(v)
+        return float(v)
