@@ -53,7 +53,29 @@ Se utilizarán datos del conjunto de datos proporcionado por Kaggle, que incluye
 - Un informe técnico detallado que documente todo el proceso de desarrollo del modelo.
 - El código fuente del algoritmo desarrollado, junto con instrucciones claras para su implementación y uso.
 - Conclusiones y recomendaciones basadas en los hallazgos del análisis.
+- Objetivo: 0= menos posibilidades de sufrir un ataque cardíaco 1= más posibilidades de sufrir un ataque cardíaco
 
+
+### Acerca de este conjunto de datos
+
+- Edad: Edad del paciente.
+- Sexo: Sexo del paciente.
+- exang: angina inducida por el ejercicio (1 = sí; 0 = no)
+- ca: número de vasos principales (0-3)
+- cp: tipo de dolor en el pecho tipo de dolor en el pecho
+        Valor 1: angina típica
+        Valor 2: angina atípica
+        Valor 3: dolor no anginoso
+        Valor 4: asintomático
+- trtbps: presión arterial en reposo (en mm Hg)
+- chol: colestoral en mg/dl obtenido mediante el sensor de IMC
+- fbs: (azúcar en sangre en ayunas > 120 mg/dl) (1 = verdadero; 0 = falso)
+- rest_ecg: resultados electrocardiográficos en reposo
+- Valor 0: normal
+        Valor 1: tener anomalía de la onda ST-T (inversiones de la onda T y/o elevación o depresión del ST > 0,05 mV)
+        Valor 2: muestra hipertrofia ventricular izquierda probable o definitiva según los criterios de Estes
+- tálaco: frecuencia cardíaca máxima alcanzada
+        
 ### Equipo de Trabajo:
 
 1. **Luis Gabriel Corrales Mora (Desarrollador de Software):** Responsable del montaje del código y la implementación del algoritmo.
