@@ -46,7 +46,7 @@ Se utilizarán datos del conjunto de datos proporcionado por Kaggle, que incluye
 - **Herramientas de Contenerización:** Docker.
 - **Versionamiento de los Datos:** DVC.
 - **Repositorio de Control de Versiones:** GitHub.
-- **Servicios en la Nube:** AWS (Amazon Web Services).
+- **Servicios en la Nube:** AWS (Amazon Web Services, EC2, S3).
 
 ### Entregables Esperados:
 
