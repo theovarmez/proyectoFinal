@@ -8,9 +8,9 @@ app = FastAPI(
     version="0.0.1"
 )
 
-#-------------------------------------------------------------
+# -------------------------------------------------------------
 # LOAD MODEL
-#-------------------------------------------------------------
+# -------------------------------------------------------------
 
 model = joblib.load("model/logistic_regression_model_v01.pkl")
 
@@ -53,7 +53,7 @@ async def predict(
         prediction = model.predict(df)
         return JSONResponse(
             status_code=status.HTTP_200_OK,
-            content= prediction[0]
+            content = prediction[0]
         )
     except Exception as e:
         raise HTTPException(
