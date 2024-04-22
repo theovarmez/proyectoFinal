@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Propuesta de Proyecto MLOps
 
 **Autores:**
