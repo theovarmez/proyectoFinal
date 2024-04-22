@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Propuesta de Proyecto MLOps
 
 **Autores:**
@@ -62,3 +63,6 @@ Se utilizarán datos del conjunto de datos proporcionado por Kaggle, que incluye
 ---
 
 *"Si buscas resultados distintos, no hagas siempre lo mismo."* - Albert Einstein
+=======
+# documentacion 
+>>>>>>> abf54f4 (Rename readme.md to README.md)
