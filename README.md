@@ -44,6 +44,7 @@ Se utilizarán datos del conjunto de datos proporcionado por Kaggle, que incluye
 
 - **Lenguaje de Programación:** Python.
 - **Herramientas de Contenerización:** Docker.
+- **Versionamiento de los Datos:** DVC.
 - **Repositorio de Control de Versiones:** GitHub.
 - **Servicios en la Nube:** AWS (Amazon Web Services).
 
