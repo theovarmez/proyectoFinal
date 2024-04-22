@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 [core]
     remote = versioning
 ['remote "versioning"']
     url = s3://proyecto-final-gab-cris-manu/versioning/
+=======
+['remote "versioning"']
+    url = s3://proyecto-final/versioning/
+>>>>>>> 6ee3c2d8d87991ea01db974402def179d326416c

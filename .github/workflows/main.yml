@@ -11,9 +11,6 @@ on:
       - apis
 
 # Acciones
-
-
-
 jobs:
   retraining_model:
     runs-on: ubuntu-latest
