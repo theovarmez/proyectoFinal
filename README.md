@@ -1,6 +1,6 @@
 # Propuesta de Proyecto MLOps
 
-**Autores:**
+**Alumnos:**
 - Luis Gabriel Corrales Mora
 - Manuel Alejandro Espinoza Ramírez
 - Cristian Vargas Jiménez
